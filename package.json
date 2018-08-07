@@ -1,0 +1,22 @@
+{
+  "name": "react-redux-connect-flow-coverage",
+  "version": "0.1.0",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "flow": "flow",
+    "flow-typed": "flow-typed",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.78.0",
+    "flow-typed": "^2.5.1"
+  },
+  "license": "MIT"
+}
