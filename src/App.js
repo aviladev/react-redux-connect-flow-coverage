@@ -1,14 +1,23 @@
 // @flow
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-class App extends Component<{}> {
+import type { State } from './reducer'
+
+type Props = { items: State }
+
+class App extends Component<Props> {
   render() {
     return (
       <div>
-        <h1>App Component</h1>
+        <h1>List of items (from redux store)</h1>
+        <ul>
+          {this.props.items.map(i => <li key={i}>{i}</li>)}
+        </ul>
       </div>
     )
   }
 }
 
-export default App
+const mapStateToProps = (state: State) => ({ items: state })
+export default connect(mapStateToProps)(App)
