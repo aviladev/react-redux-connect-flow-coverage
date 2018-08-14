@@ -28,7 +28,7 @@ npm run flow-typed install
     Output:
 
     ```text
-      Covered: 91.30% (21 of 23 expressions)
+      Covered: 95.65% (22 of 23 expressions)
     ```
 1. `npm run flow coverage -- --pretty src/App.js`
     
@@ -37,7 +37,7 @@ npm run flow-typed install
     ```json
     {
       "expressions":{
-        "covered_count":21,
+        "covered_count":22,
         "covered_locs":[
           {
             "source":"<PROJECT_ROOT>/src/App.js",
@@ -151,6 +151,12 @@ npm run flow-typed install
             "source":"<PROJECT_ROOT>/src/App.js",
             "type":"SourceFile",
             "start":{"line":23,"column":16,"offset":474},
+            "end":{"line":23,"column":22,"offset":481}
+          },
+          {
+            "source":"<PROJECT_ROOT>/src/App.js",
+            "type":"SourceFile",
+            "start":{"line":23,"column":16,"offset":474},
             "end":{"line":23,"column":39,"offset":498}
           },
           {
@@ -166,14 +172,8 @@ npm run flow-typed install
             "end":{"line":23,"column":43,"offset":502}
           }
         ],
-        "uncovered_count":2,
+        "uncovered_count":1,
         "uncovered_locs":[
-          {
-            "source":"<PROJECT_ROOT>/src/App.js",
-            "type":"SourceFile",
-            "start":{"line":23,"column":16,"offset":474},
-            "end":{"line":23,"column":22,"offset":481}
-          },
           {
             "source":"<PROJECT_ROOT>/src/App.js",
             "type":"SourceFile",
